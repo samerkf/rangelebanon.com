@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Range, launching 7 December</title>
+<meta name="description" content="100 Lebanese brands, one box, delivered in an hour across Beirut, Metn and Jounieh. Join the waitlist.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#f6f5fa;--paper:#fff;--ink:#1b1830;--muted:#625d7a;--line:#e2dfee;--violet:#5b3df5;--violet-soft:#ece8ff;--ok:#1f8a5b;--ok-soft:#e1f4ea;--bad:#c23a3a;
+--display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;--body:"Instrument Sans",ui-sans-serif,system-ui,"Segoe UI",sans-serif;--ar:"Tajawal",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 80px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,76px);font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(24px,3.5vw,32px);font-weight:700}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+.mark{font:800 28px/1 var(--display);letter-spacing:-.03em;color:var(--violet);display:flex;align-items:center;justify-content:space-between}
+.lang{font:600 13px var(--body);color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.hero{background:var(--violet);color:#fff;border-radius:24px;padding:40px 32px;margin-top:16px}
+.hero h1{color:#fff}
+.hero .sub{font-size:19px;color:#e8e3ff;max-width:46ch;margin-top:14px}
+.eyebrow{font:600 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#d8d0ff;margin-bottom:10px}
+form{display:grid;gap:10px;margin-top:24px;grid-template-columns:1fr 1fr}
+form input,form select{font:16px var(--body);color:var(--ink);background:#fff;border:0;border-radius:12px;padding:14px 16px;width:100%}
+form button{grid-column:1/-1;font:700 17px var(--body);background:#fff;color:var(--violet);border:0;border-radius:12px;padding:16px;cursor:pointer}
+form button:disabled{opacity:.6;cursor:default}
+.msg{grid-column:1/-1;font-size:14px;color:#e8e3ff;min-height:20px}
+.msg.ok{color:#c9f5dc}.msg.bad{color:#ffd0d0}
+.consent{grid-column:1/-1;font-size:13px;color:#d8d0ff;margin:0}
+.notice{font-size:13px;color:var(--muted);margin-top:8px;max-width:72ch}
+section{margin-top:40px}
+.lede{color:var(--muted);max-width:66ch;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}
+.big{font:800 clamp(36px,6vw,52px)/1 var(--display);letter-spacing:-.03em;color:var(--violet)}
+.card .k{font:600 11px/1.2 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.card .d{color:var(--muted);margin-top:6px;font-size:15px}
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:16px}
+.gift{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px}
+.gift .price{font:800 22px var(--display);color:var(--violet)}
+.gift .who{font-size:13px;color:var(--muted)}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:40px}
+[dir=rtl] body,[dir=rtl] .wrap{font-family:var(--ar)}
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .big,[dir=rtl] .gift .price{font-family:var(--ar)}
+@media (max-width:560px){form{grid-template-columns:1fr}.hero{padding:28px 20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark"><span>Range</span><button class="lang" id="lang" type="button">عربي</button></div>
+
+  <div class="hero">
+    <div class="eyebrow" data-en="Beirut, Metn and Jounieh · launching 7 December 2026" data-ar="بيروت والمتن وجونية · الإطلاق 7 كانون الأول 2026">Beirut, Metn and Jounieh · launching 7 December 2026</div>
+    <h1 data-en="100 Lebanese brands. One box. One hour." data-ar="100 ماركة لبنانية. صندوق واحد. ساعة واحدة.">100 Lebanese brands. One box. One hour.</h1>
+    <p class="sub" data-en="The brands you follow on Instagram, in one app, from one warehouse, delivered in an hour. Cash or card, one $3.50 delivery fee, easy returns. Join the list and be first in the door on launch day." data-ar="الماركات التي تتابعها على إنستغرام، في تطبيق واحد، من مستودع واحد، تصلك خلال ساعة. كاش أو بطاقة، رسم توصيل واحد 3.50$، والإرجاع سهل. انضم إلى القائمة وكن أول الداخلين يوم الإطلاق.">The brands you follow on Instagram, in one app, from one warehouse, delivered in an hour. Cash or card, one $3.50 delivery fee, easy returns. Join the list and be first in the door on launch day.</p>
+    <form id="f">
+      <input id="name" name="name" placeholder="Your name" data-ph-en="Your name" data-ph-ar="اسمك" autocomplete="name">
+      <input id="area" name="area" placeholder="Your area (Achrafieh, Jdeideh...)" data-ph-en="Your area (Achrafieh, Jdeideh...)" data-ph-ar="منطقتك (الأشرفية، الجديدة...)">
+      <input id="phone" name="phone" placeholder="WhatsApp number" data-ph-en="WhatsApp number" data-ph-ar="رقم واتساب" inputmode="tel" autocomplete="tel">
+      <input id="email" name="email" placeholder="Email (optional)" data-ph-en="Email (optional)" data-ph-ar="البريد الإلكتروني (اختياري)" inputmode="email" autocomplete="email">
+      <button id="go" type="submit" data-en="Put me on the list" data-ar="أضفني إلى القائمة">Put me on the list</button>
+      <div class="msg" id="msg"></div>
+      <p class="consent" data-en="By joining, you agree that Range may message you on WhatsApp or by email about the launch. Reply STOP at any time and we delete your details." data-ar="بانضمامك، توافق على أن تراسلك Range عبر واتساب أو البريد الإلكتروني بشأن الإطلاق. أرسل STOP في أي وقت ونحذف بياناتك.">By joining, you agree that Range may message you on WhatsApp or by email about the launch. Reply STOP at any time and we delete your details.</p>
+    </form>
+  </div>
+
+  <section>
+    <h2 data-en="What launch day looks like" data-ar="كيف يبدو يوم الإطلاق">What launch day looks like</h2>
+    <div class="grid">
+      <div class="card"><div class="big">30 days</div><div class="k" data-en="Free delivery to start" data-ar="توصيل مجاني للبداية">Free delivery to start</div><div class="d" data-en="Your first month of Range Pass is free. After that it is $20 a month until you stop it, in one tap." data-ar="شهرك الأول من Range Pass مجاني. بعدها 20$ شهرياً إلى أن توقفه، بنقرة واحدة.">Your first month of Range Pass is free. After that it is $20 a month until you stop it, in one tap.</div></div>
+      <div class="card"><div class="big">1 h</div><div class="k" data-en="From the warehouse to your door" data-ar="من المستودع إلى بابك">From the warehouse to your door</div><div class="d" data-en="One rider, one box, every brand in it. You see the clock time before you pay." data-ar="سائق واحد، صندوق واحد، وكل الماركات فيه. ترى وقت الوصول قبل أن تدفع.">One rider, one box, every brand in it. You see the clock time before you pay.</div></div>
+      <div class="card"><div class="big">20</div><div class="k" data-en="Only on Range" data-ar="حصرياً على Range">Only on Range</div><div class="d" data-en="Launch drops from brands you will not find on any other app." data-ar="إصدارات إطلاق من ماركات لن تجدها على أي تطبيق آخر.">Launch drops from brands you will not find on any other app.</div></div>
+      <div class="card"><div class="big">$3.50</div><div class="k" data-en="One delivery fee" data-ar="رسم توصيل واحد">One delivery fee</div><div class="d" data-en="However many brands are in the box. Range Pass makes it free." data-ar="مهما كان عدد الماركات في الصندوق. Range Pass يجعله مجانياً.">However many brands are in the box. Range Pass makes it free.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="The gift guide, one box from three brands" data-ar="دليل الهدايا، صندوق واحد من ثلاث ماركات">The gift guide, one box from three brands</h2>
+    <p class="lede" data-en="Mix brands in one order, pay one delivery fee, add a line for the person who opens it. The guide fills in from 23 November with the brands that signed." data-ar="اخلط الماركات في طلب واحد، ادفع رسم توصيل واحداً، وأضف سطراً لمن يفتحه. يمتلئ الدليل من 23 تشرين الثاني بالماركات التي وقّعت.">Mix brands in one order, pay one delivery fee, add a line for the person who opens it. The guide fills in from 23 November with the brands that signed.</p>
+    <div class="guide">
+      <div class="gift"><div class="price">$25</div><div data-en="Skincare trio" data-ar="ثلاثي العناية بالبشرة">Skincare trio</div><div class="who" data-en="For the friend who reads labels" data-ar="للصديقة التي تقرأ الملصقات">For the friend who reads labels</div></div>
+      <div class="gift"><div class="price">$40</div><div data-en="Coffee and the cup" data-ar="القهوة والفنجان">Coffee and the cup</div><div class="who" data-en="A roaster and a ceramicist" data-ar="محمصة وخزّاف">A roaster and a ceramicist</div></div>
+      <div class="gift"><div class="price">$60</div><div data-en="Kids, sorted" data-ar="الأطفال، مرتّبون">Kids, sorted</div><div class="who" data-en="Toys and a book, Lebanese both" data-ar="ألعاب وكتاب، لبنانيان">Toys and a book, Lebanese both</div></div>
+      <div class="gift"><div class="price">$100</div><div data-en="The host box" data-ar="صندوق المضيف">The host box</div><div class="who" data-en="Candle, sweets, a bottle of oil" data-ar="شمعة وحلويات وزجاجة زيت">Candle, sweets, a bottle of oil</div></div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <h3 data-en="Your details" data-ar="بياناتك">Your details</h3>
+    <p class="notice" data-en="Range Lebanon keeps the name, area, WhatsApp number and email you give here, plus which ad or link brought you, to send you the launch message and to learn which ads work. Nothing else, and never sold or shared for anyone else's marketing. It is stored with our database provider in Frankfurt, Germany. We delete it six months after launch unless you open an account. Reply STOP to any message, and we delete it sooner." data-ar="تحتفظ Range لبنان بالاسم والمنطقة ورقم واتساب والبريد الإلكتروني التي تدخلها هنا، وبالإعلان أو الرابط الذي أوصلك، لنرسل لك رسالة الإطلاق ولنعرف أي الإعلانات تنجح. لا شيء غير ذلك، ولا نبيعها ولا نشاركها لتسويق أحد آخر. تُحفظ لدى مزوّد قاعدة البيانات في فرانكفورت، ألمانيا. نحذفها بعد ستة أشهر من الإطلاق إلا إذا فتحت حساباً. أرسل STOP على أي رسالة ونحذفها قبل ذلك.">Range Lebanon keeps the name, area, WhatsApp number and email you give here, plus which ad or link brought you, to send you the launch message and to learn which ads work. Nothing else, and never sold or shared for anyone else's marketing. It is stored with our database provider in Frankfurt, Germany. We delete it six months after launch unless you open an account. Reply STOP to any message, and we delete it sooner.</p>
+  </div>
+</div>
+<script>
+(function(){
+  // The project's public (anon) key: it can only call join_waitlist, which writes one row.
+  var URL="https://utqcttpimkaiieilmbpd.supabase.co", KEY="sb_publishable_m3LHtKExZgoPqu8L7UG_Hg_YXg16v8t";
+  var lang="en";
+  // Where this visitor came from (G-61): the ad's UTM tags, the referring site and the device, kept
+  // with the row so the 19 October paid tests can be read. CONSENT names the notice shown above.
+  var CONSENT="2026-10-16", q=new URLSearchParams(location.search), meta={consent:CONSENT,landing:location.pathname,
+    referrer:document.referrer?document.referrer.split("?")[0]:null,device:/Mobi|Android|iPhone/i.test(navigator.userAgent)?"phone":"desktop"};
+  ["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].forEach(function(k){if(q.get(k))meta[k]=q.get(k)});
+  function apply(){
+    document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+    document.querySelectorAll("[data-en]").forEach(function(el){el.textContent=el.getAttribute("data-"+lang)});
+    document.querySelectorAll("[data-ph-en]").forEach(function(el){el.placeholder=el.getAttribute("data-ph-"+lang)});
+    document.getElementById("lang").textContent=lang==="ar"?"English":"عربي";
+  }
+  document.getElementById("lang").addEventListener("click",function(){lang=lang==="ar"?"en":"ar";apply()});
+  var f=document.getElementById("f"),msg=document.getElementById("msg"),go=document.getElementById("go");
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim();
+    if(!phone&&!email){msg.className="msg bad";msg.textContent=lang==="ar"?"رقم واتساب أو بريد إلكتروني":"A WhatsApp number or an email";return}
+    go.disabled=true;msg.className="msg";msg.textContent=lang==="ar"?"لحظة":"One moment";
+    fetch(URL+"/rest/v1/rpc/join_waitlist",{method:"POST",headers:{"Content-Type":"application/json","apikey":KEY,"Authorization":"Bearer "+KEY},
+      body:JSON.stringify({p_phone:phone||null,p_email:email||null,p_name:document.getElementById("name").value||null,p_area:document.getElementById("area").value||null,p_source:"launch-page",p_meta:meta})})
+    .then(function(r){return r.ok?r.json():r.json().then(function(j){throw new Error(j.message||"failed")})})
+    .then(function(){msg.className="msg ok";msg.textContent=lang==="ar"?"أنت على القائمة. نراسلك يوم الإطلاق.":"You are on the list. We message you on launch day.";f.reset()})
+    .catch(function(err){msg.className="msg bad";msg.textContent=(lang==="ar"?"لم ينجح: ":"That did not work: ")+err.message})
+    .finally(function(){go.disabled=false});
+  });
+  apply();
+})();
+</script>
+</body>
+</html>

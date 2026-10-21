@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /courier/
+Sitemap: https://rangelebanon.com/sitemap.xml
