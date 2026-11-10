@@ -76,10 +76,16 @@ p{margin:0}
 .ph.b{top:6%;right:0;width:36%;height:42%}
 .ph.c{bottom:0;right:4%;width:40%;height:44%}
 .float{position:absolute;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 20px 50px -20px rgba(29,27,64,.5);padding:14px 16px;font-size:14px}
-.float.order{left:-28px;bottom:16%;width:250px}
+.float.order{left:-28px;bottom:12%;width:262px}
 .float.order .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .float.order .t{font-weight:700;font-size:15px}
 .float.order .m{color:var(--muted);font-size:13px}
+.float.order .ois{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.float.order .oi{display:flex;align-items:center;gap:10px}
+.float.order .oi img{width:38px;height:38px;border-radius:10px;object-fit:cover;flex:none}
+.float.order .oi .n{min-width:0;line-height:1.25}.float.order .oi b{display:block;font-size:13px}.float.order .oi span{color:var(--muted);font-size:12px}
+.float.order .of{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:11px;padding-top:10px;font-size:13px}
+.float.order .ok{color:#15803d;font-weight:700}
 .bar{height:6px;border-radius:6px;background:var(--mist);margin:12px 0 8px;overflow:hidden}
 .bar i{display:block;height:100%;width:72%;background:var(--navy);border-radius:6px;animation:load 3.5s ease-in-out infinite alternate}
 @keyframes load{from{width:38%}to{width:86%}}
@@ -298,9 +304,9 @@ footer .about{max-width:22em;margin-top:18px;font-size:15px}
       <div class="ph c"><img src="/img/maqui-1.jpg" alt="" width="933" height="1400"></div>
       <div class="float time"><b>&#10003;</b><span data-en="Delivered today" data-ar="وصل اليوم">Delivered today</span></div>
       <div class="float order">
-        <div class="row"><span class="t" data-en="Your Range box" data-ar="صندوق Range">Your Range box</span><span class="m">3 <span data-en="brands" data-ar="ماركات">brands</span></span></div>
-        <div class="bar"><i></i></div>
-        <div class="row"><span class="m" data-en="On the way · Achrafieh" data-ar="في الطريق · الأشرفية">On the way · Achrafieh</span><span class="t">13:42</span></div>
+        <div class="row"><span class="t" data-en="One order, 3 brands" data-ar="طلب واحد، 3 ماركات">One order, 3 brands</span><span class="m" data-en="Today" data-ar="اليوم">Today</span></div>
+        <div class="ois"><div class="oi"><img src="/img/amari_gem-1.jpg" alt=""><div class="n"><b data-en="Necklace" data-ar="قلادة">Necklace</b><span>Amari Gem</span></div></div><div class="oi"><img src="/img/maqui-1.jpg" alt=""><div class="n"><b data-en="Hair clip" data-ar="مشبك شعر">Hair clip</b><span>Maqui</span></div></div><div class="oi"><img src="/img/dripple-pink.jpg" alt=""><div class="n"><b data-en="Water bottle" data-ar="قارورة مياه">Water bottle</b><span>Dripple</span></div></div></div>
+        <div class="of"><span class="m" data-en="One delivery" data-ar="توصيلة واحدة">One delivery</span><span class="ok">&#10003; <span data-en="Arrives today" data-ar="يصل اليوم">Arrives today</span></span></div>
       </div>
     </div>
   </div>
