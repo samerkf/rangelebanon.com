@@ -194,7 +194,12 @@ section{padding:110px 0}
 .wl .btn{grid-column:1/-1;padding:18px}
 .wl .msg{grid-column:1/-1;color:#c9cff0}
 .wl .msg.ok{color:#9fe3bf}.wl .msg.bad{color:#ffc4b8}
-.wl .consent{grid-column:1/-1;font-size:13px;color:#9ea3c7}
+.agree{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.45;cursor:pointer;text-align:start}
+.agree input[type=checkbox]{flex:none;width:18px;height:18px;margin:1px 0 0;padding:0;border:0;border-radius:4px;accent-color:var(--navy);cursor:pointer}
+.agree a{text-decoration:underline;text-underline-offset:2px}
+.agree.on-dark{color:#c9cff0}.agree.on-dark a{color:#fff}
+.agree.on-light{color:var(--muted)}.agree.on-light a{color:var(--navy)}
+
 
 /* faq */
 .faq{display:grid;grid-template-columns:1fr 1.4fr;gap:60px}
@@ -396,6 +401,7 @@ footer .about{max-width:22em;margin-top:18px;font-size:15px}
           <input name="area" placeholder="Instagram or website" data-ph-en="Instagram or website" data-ph-ar="إنستغرام أو الموقع">
           <input name="phone" placeholder="WhatsApp number" data-ph-en="WhatsApp number" data-ph-ar="رقم واتساب" inputmode="tel" autocomplete="tel">
           <input name="email" placeholder="Email" data-ph-en="Email" data-ph-ar="البريد الإلكتروني" type="email" required inputmode="email" autocomplete="email">
+          <label class="agree on-light"><input type="checkbox" name="agree" required><span data-html="1" data-en="I accept the <a href=&quot;/terms/&quot; target=&quot;_blank&quot;>Terms</a> and <a href=&quot;/privacy/&quot; target=&quot;_blank&quot;>Privacy Policy</a>" data-ar="أوافق على <a href=&quot;/terms/&quot; target=&quot;_blank&quot;>الشروط</a> و<a href=&quot;/privacy/&quot; target=&quot;_blank&quot;>سياسة الخصوصية</a>">I accept the <a href="/terms/" target="_blank">Terms</a> and <a href="/privacy/" target="_blank">Privacy Policy</a></span></label>
           <button class="btn btn-navy" type="submit"><span data-en="Apply" data-ar="قدّم طلبك">Apply</span><svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           <div class="msg" data-msg></div>
         </form>
@@ -418,9 +424,9 @@ footer .about{max-width:22em;margin-top:18px;font-size:15px}
         <input name="area" placeholder="Your area" data-ph-en="Your area" data-ph-ar="منطقتك">
         <input name="phone" placeholder="WhatsApp number" data-ph-en="WhatsApp number" data-ph-ar="رقم واتساب" inputmode="tel" autocomplete="tel">
         <input name="email" placeholder="Email" data-ph-en="Email" data-ph-ar="البريد الإلكتروني" type="email" required inputmode="email" autocomplete="email">
+        <label class="agree on-dark"><input type="checkbox" name="agree" required><span data-html="1" data-en="I accept the <a href=&quot;/terms/&quot; target=&quot;_blank&quot;>Terms</a> and <a href=&quot;/privacy/&quot; target=&quot;_blank&quot;>Privacy Policy</a>" data-ar="أوافق على <a href=&quot;/terms/&quot; target=&quot;_blank&quot;>الشروط</a> و<a href=&quot;/privacy/&quot; target=&quot;_blank&quot;>سياسة الخصوصية</a>">I accept the <a href="/terms/" target="_blank">Terms</a> and <a href="/privacy/" target="_blank">Privacy Policy</a></span></label>
         <button class="btn btn-white" type="submit"><span data-en="Put me on the list" data-ar="أضفني إلى القائمة">Put me on the list</span></button>
         <div class="msg" data-msg></div>
-        <p class="consent" data-en="By joining, you agree that Range may message you on WhatsApp or by email about the launch. Reply STOP at any time and we delete your details." data-ar="بانضمامك، توافق على أن تراسلك Range عبر واتساب أو البريد الإلكتروني بشأن الإطلاق. أرسل STOP في أي وقت ونحذف بياناتك.">By joining, you agree that Range may message you on WhatsApp or by email about the launch. Reply STOP at any time and we delete your details.</p>
       </form>
     </div>
   </div>
@@ -473,6 +479,7 @@ footer .about{max-width:22em;margin-top:18px;font-size:15px}
       e.preventDefault();
       var v=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():""};
       var phone=v("phone"),email=v("email");
+      var ag=f.querySelector("[name=agree]"); if(ag&&!ag.checked){msg.className="msg bad";msg.textContent=lang==="ar"?"يرجى الموافقة على الشروط وسياسة الخصوصية":"Please accept the Terms and Privacy Policy";return}
       if(f.querySelector("[name=email][required]")&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.className="msg bad";msg.textContent=lang==="ar"?"أدخل بريداً إلكترونياً صحيحاً":"Add a valid email";return}
       if(!phone&&!email){msg.className="msg bad";msg.textContent=lang==="ar"?"أدخل رقم واتساب أو بريداً إلكترونياً":"Add a WhatsApp number or an email";return}
       go.disabled=true;msg.className="msg";msg.textContent=lang==="ar"?"لحظة":"One moment";
